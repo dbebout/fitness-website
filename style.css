@@ -1,0 +1,212 @@
+body {
+  font-family: Axifromo, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+}
+/* Reset basic margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #221eda;
+  padding: 1rem 2rem;
+  font-family: sans-serif;
+}
+
+/* Logo styling */
+.nav-logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Links container */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+/* Individual links */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: #00bcd4;
+}
+/* 1. Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0b0c10; /* Matching the high-energy dark palette */
+}
+
+/* 2. Logo Link Wrapper */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* 3. The Logo Image Itself */
+.navbar-logo img {
+  height: 45px;       /* Controls the overall size of the logo */
+  width: auto;        /* Prevents stretching or distortion */
+  max-width: 180px;   /* Prevents extra wide logos from crowding the menu */
+  object-fit: contain;/* Ensures the image scales nicely inside its box */
+}
+
+/* 4. Navigation Links Container */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;          /* Clean spacing between menu items */
+  margin: 0;
+  padding: 0;
+}
+
+/* 5. Individual Link Styling */
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.grid-container {
+  display: grid;
+  /* Creates 3 columns of equal width */
+  grid-template-columns: repeat(3, 1fr);
+  /* Creates rows automatically for all items */
+  grid-auto-rows: 200px;
+  /* Adds a smaller gap between rows and columns */
+  gap: 12px; 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem 0; /* top padding and side padding so background shows */
+}
+
+/* Optional styling just to make the items visible */
+.grid-item {
+  background-color: #75d48d;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 15px;
+  color: black;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-3px);
+  background-color: #5db27a;
+}
+main.strength-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.workout-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+.workout-table th,
+.workout-table td {
+  border: 1px solid #ccc;
+  padding: 0.85rem;
+}
+
+.workout-table th {
+  background-color: #221eda;
+  color: #fff;
+  text-align: left;
+}
+
+.workout-table tbody tr:nth-child(even) {
+  background-color: rgba(117, 212, 141, 0.15);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background-color: #221eda;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Responsive grid for small screens */
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 8px;
+    padding: 0 1rem;
+  }
+  .grid-item {
+    border-radius: 10px;
+    padding: 1.25rem 0;
+  }
+}
+
+/* Hero image overlay for homepage */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.hero .fitness-image {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  display: block;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+.hero-text h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+}
+.hero-text p {
+  margin-top: 0.5rem;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+}
+
+@media (max-width: 420px) {
+  .hero .fitness-image { height: 45vh; }
+}
