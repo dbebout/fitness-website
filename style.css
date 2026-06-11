@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-color: #000;
   line-height: 1.6;
-  color: #333;
+  color: #fff;
   text-align: center;
 }
 /* Reset basic margins */
@@ -128,6 +128,7 @@ main.strength-content {
   margin: 2rem auto;
   padding: 0 1rem;
   text-align: left;
+  color: #fff;
 }
 
 .workout-table {
@@ -152,6 +153,17 @@ main.strength-content {
   background-color: rgba(117, 212, 141, 0.15);
 }
 
+main {
+  color: #fff;
+}
+
+.page-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: left;
+}
+
 .btn {
   display: inline-block;
   padding: 0.6rem 1rem;
@@ -160,6 +172,12 @@ main.strength-content {
   text-decoration: none;
   border-radius: 8px;
   margin-top: 1rem;
+}
+
+/* Ensure links inside content are visible */
+.strength-content a {
+  color: #00bcd4;
+  text-decoration: underline;
 }
 
 /* Responsive grid for small screens */
