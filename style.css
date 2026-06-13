@@ -1,4 +1,4 @@
-body {
+html, body {
   font-family: Axifromo, sans-serif;
   margin: 0;
   padding: 0;
@@ -92,36 +92,33 @@ body {
 }
 .grid-container {
   display: grid;
-  /* Creates 3 columns of equal width */
   grid-template-columns: repeat(3, 1fr);
-  /* Creates rows automatically for all items */
-  grid-auto-rows: 200px;
-  /* Adds a smaller gap between rows and columns */
-  gap: 12px; 
+  grid-auto-rows: 110px;
+  gap: 12px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem 0; /* top padding and side padding so background shows */
+  padding: 2rem 1rem 0;
 }
 
-/* Optional styling just to make the items visible */
 .grid-item {
-  background-color: #75d48d;
-  border: 1px solid #ccc;
+  background-color: #221eda;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: sans-serif;
-  font-weight: bold;
-  border-radius: 15px;
-  color: black;
+  font-family: Axifromo, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border-radius: 12px;
+  color: #fff;
   text-decoration: none;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .grid-item:hover {
   transform: translateY(-3px);
-  background-color: #5db27a;
+  background-color: #1a16b0;
 }
 main.strength-content {
   max-width: 900px;
@@ -141,6 +138,7 @@ main.strength-content {
 .workout-table td {
   border: 1px solid #ccc;
   padding: 0.85rem;
+  color: #fff;
 }
 
 .workout-table th {
